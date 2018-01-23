@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stranger Things Wall</title>
+</head>
+<body style="text-align: center" background="{{url_for('static', filename='strangerWallpaper.jpg')}}">
+<p><img src="{{url_for('static', filename='strangerLogo.jpg')}}"></p>
+<p>Enter message to be displayed on message wall (50 characters max)</p>
+<form id="display" action="/stranger/display" method="POST">
+    <textarea name="message" rows="3" cols="40" maxlength="50"></textarea><br>
+    <input type="submit" value="submit">
+</form>
+<br>
+<p><a href="https://github.com/CalebKussmaul/Stranger-Things-Integrated">project source code</a></p>
+</body>
+</html>
